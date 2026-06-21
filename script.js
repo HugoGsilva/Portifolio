@@ -7,24 +7,28 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
+            entry.target.classList.add('is-visible');
             observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// Add initial styles and observe project cards
+// Add scroll reveal animations
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.project-card');
-    
-    cards.forEach((card, index) => {
-        card.style.opacity = "0";
-        card.style.transform = "translateY(30px)";
-        card.style.transition = `all 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.1}s`;
+    const revealCards = document.querySelectorAll('.project-card, .skill-card');
+    const revealBlocks = document.querySelectorAll('.contact-inner');
+
+    revealCards.forEach((card, index) => {
+        card.classList.add('reveal-card');
+        card.style.transitionDelay = `${index * 0.18}s`;
         observer.observe(card);
     });
-    
+
+    revealBlocks.forEach((block) => {
+        block.classList.add('reveal-block');
+        observer.observe(block);
+    });
+
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
