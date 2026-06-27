@@ -209,8 +209,10 @@ section {
     background: var(--green);
     transition: width 0.3s var(--ease);
 }
-.nav-links a:not(.nav-cta):hover { color: var(--text); }
-.nav-links a:not(.nav-cta):hover::after { width: 100%; }
+.nav-links a:not(.nav-cta):hover,
+.nav-links a:not(.nav-cta).active { color: var(--text); }
+.nav-links a:not(.nav-cta):hover::after,
+.nav-links a:not(.nav-cta).active::after { width: 100%; }
 .nav-cta {
     padding: 8px 16px;
     border: 1px solid var(--green-deep);
@@ -549,6 +551,54 @@ section {
     font-size: 0.85rem;
 }
 .footer-note { font-family: var(--font-mono); }
+
+/* ---------- Scroll progress bar ---------- */
+.scroll-progress {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    width: 0%;
+    z-index: 100;
+    background: linear-gradient(90deg, var(--green-deep), var(--green-bright));
+    box-shadow: 0 0 12px var(--green);
+    transition: width 0.1s linear;
+}
+
+/* ---------- Cursor spotlight ---------- */
+.cursor-glow {
+    position: fixed;
+    top: 0; left: 0;
+    width: 480px; height: 480px;
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(circle, var(--green-glow) 0%, transparent 65%);
+    transform: translate3d(-50%, -50%, 0);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    will-change: left, top;
+}
+body.cursor-active .cursor-glow { opacity: 1; }
+
+/* ---------- Typed role + caret ---------- */
+.caret {
+    display: inline-block;
+    width: 2px;
+    height: 1.05em;
+    background: var(--green-bright);
+    margin-left: 2px;
+    vertical-align: text-bottom;
+    animation: blink 1s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+.typed { color: var(--green-bright); }
+
+/* ---------- Card 3D tilt ---------- */
+.work-grid { perspective: 1200px; }
+.work-card[data-tilt] {
+    transform-style: preserve-3d;
+    will-change: transform;
+}
 
 /* ---------- Scroll reveal ---------- */
 .reveal {

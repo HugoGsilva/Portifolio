@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
     <div class="bg-grid" aria-hidden="true"></div>
     <div class="bg-glow" aria-hidden="true"></div>
 
@@ -44,7 +46,9 @@
                 <h1 class="hero-title reveal">
                     Construo <span class="accent">sistemas web</span><br>de ponta a ponta.
                 </h1>
-                <p class="hero-role reveal">Hugo Guimarães da Silva — Desenvolvedor Full Stack &amp; Analista de Sistemas</p>
+                <p class="hero-role reveal">
+                    Hugo Guimarães da Silva — <span class="typed" data-words="Desenvolvedor Full Stack,Analista de Sistemas,Builder de Automações,Backend &amp; APIs"></span><span class="caret" aria-hidden="true"></span>
+                </p>
                 <p class="hero-lead reveal">
                     Transformo processos manuais em aplicações claras, testáveis e publicadas:
                     interface, regra de negócio, persistência, integração e deploy.
@@ -54,8 +58,8 @@
                     <a class="btn btn-ghost" href="https://docs.google.com/document/d/1jc-6bOqhlyUAKrezHtoS9QtrOKDsIar5j3YH27Zg33w/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Currículo ↗</a>
                 </div>
                 <ul class="hero-stats reveal" aria-label="Resumo">
-                    <li><strong>3</strong><span>Projetos full stack em produção</span></li>
-                    <li><strong>10+</strong><span>Tecnologias no dia a dia</span></li>
+                    <li><strong data-count="3">3</strong><span>Projetos full stack em produção</span></li>
+                    <li><strong data-count="10" data-suffix="+">10+</strong><span>Tecnologias no dia a dia</span></li>
                     <li><strong>ADS</strong><span>Cursando no IFPR</span></li>
                 </ul>
                 <div class="hero-socials reveal" aria-label="Links profissionais">
@@ -73,7 +77,7 @@
             </div>
 
             <div class="work-grid">
-                <article class="work-card reveal">
+                <article class="work-card reveal" data-tilt>
                     <div class="work-media">
                         <img src="docx.hugogsilva.png" alt="Interface do Gerador de Propostas Comerciais" loading="lazy">
                     </div>
@@ -93,7 +97,7 @@
                     </div>
                 </article>
 
-                <article class="work-card reveal">
+                <article class="work-card reveal" data-tilt>
                     <div class="work-media">
                         <img src="loja.hugogsilva.dev.png" alt="Interface da IndieGameStore" loading="lazy">
                     </div>
@@ -113,7 +117,7 @@
                     </div>
                 </article>
 
-                <article class="work-card reveal">
+                <article class="work-card reveal" data-tilt>
                     <div class="work-media">
                         <img src="chatbot.png" alt="Interface do Chatbot Netflix-Prolog" loading="lazy">
                     </div>
