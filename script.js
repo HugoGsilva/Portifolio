@@ -21,8 +21,8 @@ const I18N = {
         'hero.stat3': 'Cursando no IFPR',
 
         'projects.eyebrow': 'Trabalhos selecionados',
-        'projects.title': 'Projetos que mostram arquitetura, entrega e uso real.',
-        'projects.details': 'Ver detalhes →', 'projects.live': 'Live preview ↗',
+        'projects.title': 'Meus projetos.',
+        'projects.details': 'Ver detalhes →', 'projects.live': 'Live preview ↗', 'projects.academic': 'Acadêmico',
         'projects.docx.tag': 'Produção',
         'projects.docx.desc': 'Aplicação full stack que preenche modelos DOCX/ODT e gera PDFs comerciais, reduzindo repetição operacional em propostas.',
         'projects.indie.tag': 'Marketplace',
@@ -42,15 +42,19 @@ const I18N = {
         'stack.eyebrow': 'Stack', 'stack.title': 'Ferramentas que uso para fazer projetos.',
         'stack.data': 'Dados & Entrega', 'stack.automation': 'Automação',
         'stack.scripts': 'Scripts utilitários', 'stack.docgen': 'Geração de documentos', 'stack.integrations': 'Integrações',
+        'stack.infra': 'Infraestrutura & Deploy', 'stack.exploring': 'Explorando agora', 'stack.wip': 'em andamento',
+        'stack.ai.training': 'Treinamento/fine-tuning (noções)', 'stack.ai.llm': 'APIs de LLM',
+        'stack.ai.prompt': 'Prompt engineering', 'stack.ai.python': 'Python p/ dados',
 
         'timeline.eyebrow': 'Trajetória', 'timeline.title': 'Formação e marcos.',
-        'timeline.t1.period': 'Cursando', 'timeline.t1.title': 'Análise e Desenvolvimento de Sistemas', 'timeline.t1.desc': 'Instituto Federal do Paraná — Paranaguá, PR',
-        'timeline.t2.period': '2024 — 2026', 'timeline.t2.title': 'Projetos full stack publicados', 'timeline.t2.desc': 'Gerador de Propostas, IndieGameStore API e Chatbot Netflix-Prolog em produção, com deploy próprio.',
-        'timeline.t3.period': 'Concluído · Dez 2022', 'timeline.t3.title': 'Técnico em Comércio Exterior', 'timeline.t3.desc': 'Alberto Gomes Veiga — Paranaguá, PR',
+        'timeline.t1.period': '2026 — atual', 'timeline.t1.title': 'Desenvolvedor Full Stack', 'timeline.t1.desc': 'Trabalhando no desenvolvimento de aplicações web, APIs e automações.',
+        'timeline.t2.period': 'Em andamento', 'timeline.t2.title': 'Análise e Desenvolvimento de Sistemas', 'timeline.t2.desc': 'Instituto Federal do Paraná — Paranaguá, PR',
+        'timeline.t3.period': 'Concluído · 2022', 'timeline.t3.title': 'Técnico em Comércio Exterior', 'timeline.t3.desc': 'Alberto Gomes Veiga — Paranaguá, PR',
 
         'contact.eyebrow': 'Contato', 'contact.title': 'Quer conversar sobre sistemas, automação ou oportunidades?',
         'contact.lead': 'Respondo rápido — escolha o canal que preferir.',
 
+        'footer.copy': '© 2026 Hugo Guimarães da Silva',
 
         'modal.problem': 'O problema', 'modal.architecture': 'Arquitetura',
         'modal.highlights': 'Destaques', 'modal.stack': 'Stack', 'modal.visit': 'Acessar projeto ↗'
@@ -70,8 +74,8 @@ const I18N = {
         'hero.stat3': 'Studying CS at IFPR',
 
         'projects.eyebrow': 'Selected work',
-        'projects.title': 'Projects that show architecture, delivery and real usage.',
-        'projects.details': 'View details →', 'projects.live': 'Live preview ↗',
+        'projects.title': 'My projects.',
+        'projects.details': 'View details →', 'projects.live': 'Live preview ↗', 'projects.academic': 'Academic',
         'projects.docx.tag': 'Production',
         'projects.docx.desc': 'Full stack app that fills DOCX/ODT templates and generates commercial PDFs, cutting repetitive work on proposals.',
         'projects.indie.tag': 'Marketplace',
@@ -91,15 +95,19 @@ const I18N = {
         'stack.eyebrow': 'Stack', 'stack.title': 'Tools I use to ship projects.',
         'stack.data': 'Data & Delivery', 'stack.automation': 'Automation',
         'stack.scripts': 'Utility scripts', 'stack.docgen': 'Document generation', 'stack.integrations': 'Integrations',
+        'stack.infra': 'Infrastructure & Deploy', 'stack.exploring': 'Currently exploring', 'stack.wip': 'in progress',
+        'stack.ai.training': 'Model training/fine-tuning (basics)', 'stack.ai.llm': 'LLM APIs',
+        'stack.ai.prompt': 'Prompt engineering', 'stack.ai.python': 'Python for data',
 
         'timeline.eyebrow': 'Journey', 'timeline.title': 'Education & milestones.',
-        'timeline.t1.period': 'In progress', 'timeline.t1.title': 'Systems Analysis & Development', 'timeline.t1.desc': 'Federal Institute of Paraná — Paranaguá, Brazil',
-        'timeline.t2.period': '2024 — 2026', 'timeline.t2.title': 'Full stack projects shipped', 'timeline.t2.desc': 'Proposal Generator, IndieGameStore API and Netflix-Prolog Chatbot in production, self-deployed.',
-        'timeline.t3.period': 'Completed · Dec 2022', 'timeline.t3.title': 'Foreign Trade Technician', 'timeline.t3.desc': 'Alberto Gomes Veiga — Paranaguá, Brazil',
+        'timeline.t1.period': '2026 — present', 'timeline.t1.title': 'Full Stack Developer', 'timeline.t1.desc': 'Working on web applications, APIs and automations.',
+        'timeline.t2.period': 'In progress', 'timeline.t2.title': 'Systems Analysis & Development', 'timeline.t2.desc': 'Federal Institute of Paraná — Paranaguá, Brazil',
+        'timeline.t3.period': 'Completed · 2022', 'timeline.t3.title': 'Foreign Trade Technician', 'timeline.t3.desc': 'Alberto Gomes Veiga — Paranaguá, Brazil',
 
         'contact.eyebrow': 'Contact', 'contact.title': 'Want to talk about systems, automation or opportunities?',
         'contact.lead': 'I reply fast — pick whichever channel you prefer.',
 
+        'footer.copy': '© 2026 Hugo Guimarães da Silva',
 
         'modal.problem': 'The problem', 'modal.architecture': 'Architecture',
         'modal.highlights': 'Highlights', 'modal.stack': 'Stack', 'modal.visit': 'Visit project ↗'
@@ -399,6 +407,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.style.transition = 'transform 0.4s cubic-bezier(0.22, 1, 0.36, 1)';
                 card.style.transform = '';
             });
+        });
+
+        // Magnetic buttons — subtle pull toward the cursor
+        document.querySelectorAll('.btn').forEach((btn) => {
+            const STRENGTH = 0.3, MAX = 8;
+            btn.addEventListener('mousemove', (e) => {
+                const r = btn.getBoundingClientRect();
+                let x = (e.clientX - (r.left + r.width / 2)) * STRENGTH;
+                let y = (e.clientY - (r.top + r.height / 2)) * STRENGTH;
+                x = Math.max(-MAX, Math.min(MAX, x));
+                y = Math.max(-MAX, Math.min(MAX, y));
+                btn.style.transform = `translate(${x}px, ${y}px)`;
+            });
+            btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
         });
     }
 

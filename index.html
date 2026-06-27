@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de Hugo Guimarães da Silva, desenvolvedor full stack focado em sistemas web, automação, APIs e projetos com arquitetura real e deploy.">
-    <meta name="theme-color" content="#0a0f0c">
+    <meta name="theme-color" content="#0c100e">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230c100e'/><text x='16' y='23' font-family='Arial,sans-serif' font-size='22' font-weight='bold' text-anchor='middle' fill='%234ade80'>H</text></svg>">
     <meta property="og:title" content="Hugo Guimarães da Silva | Full Stack Developer">
     <meta property="og:description" content="Sistemas web, automação de documentos, APIs e projetos completos com frontend, backend e deploy.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Hugo Guimarães da Silva — Desenvolvedor Full Stack">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="og-image.png">
     <title>Hugo Guimarães da Silva | Full Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,25 +54,25 @@
     <main>
         <section id="inicio" class="hero">
             <div class="hero-inner">
-                <p class="eyebrow reveal"><span class="status-dot"></span><span data-i18n="hero.eyebrow">Disponível para projetos · Paranaguá, PR</span></p>
-                <h1 class="hero-title reveal" data-i18n="hero.title">Construo <span class="accent">APIs, automações</span> e aplicações web<br>que resolvem problemas reais.</h1>
-                <p class="hero-role reveal">
+                <p class="eyebrow intro"><span class="status-dot"></span><span data-i18n="hero.eyebrow">Disponível para projetos · Paranaguá, PR</span></p>
+                <h1 class="hero-title intro" data-i18n="hero.title">Construo <span class="accent">APIs, automações</span> e aplicações web<br>que resolvem problemas reais.</h1>
+                <p class="hero-role intro">
                     <span data-i18n="hero.rolePrefix">Hugo Guimarães da Silva — </span><span class="typed" data-i18n-words="hero.roleWords"></span><span class="caret" aria-hidden="true"></span>
                 </p>
-                <p class="hero-lead reveal" data-i18n="hero.lead">
+                <p class="hero-lead intro" data-i18n="hero.lead">
                     Transformo processos manuais em aplicações claras, testáveis e publicadas:
                     interface, regra de negócio, persistência, integração e deploy.
                 </p>
-                <div class="hero-actions reveal">
+                <div class="hero-actions intro">
                     <a class="btn btn-primary" href="#projetos" data-i18n="hero.ctaProjects">Ver projetos</a>
                     <a class="btn btn-ghost" href="https://docs.google.com/document/d/1jc-6bOqhlyUAKrezHtoS9QtrOKDsIar5j3YH27Zg33w/edit?usp=sharing" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaResume">Currículo ↗</a>
                 </div>
-                <ul class="hero-stats reveal" aria-label="Resumo">
+                <ul class="hero-stats intro" aria-label="Resumo">
                     <li><strong data-count="3" data-suffix="+">3+</strong><span data-i18n="hero.stat1">Projetos full stack entregues</span></li>
                     <li><strong data-count="10" data-suffix="+">10+</strong><span data-i18n="hero.stat2">Tecnologias no dia a dia</span></li>
                     <li><strong>ADS</strong><span data-i18n="hero.stat3">Cursando no IFPR</span></li>
                 </ul>
-                <div class="hero-socials reveal" aria-label="Links profissionais">
+                <div class="hero-socials intro" aria-label="Links profissionais">
                     <a href="https://github.com/HugoGsilva" target="_blank" rel="noopener noreferrer">GitHub</a>
                     <a href="https://linkedin.com/in/hugoGsilvaa" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     <a href="mailto:hugoartess@gmail.com" data-i18n="hero.email">E-mail</a>
@@ -76,7 +83,7 @@
         <section id="projetos" class="work-section">
             <div class="section-intro reveal">
                 <p class="eyebrow"><span class="num">01</span> <span data-i18n="projects.eyebrow">Trabalhos selecionados</span></p>
-                <h2 data-i18n="projects.title">Projetos que mostram arquitetura, entrega e uso real.</h2>
+                <h2 data-i18n="projects.title">Meus projetos.</h2>
             </div>
 
             <div class="work-grid">
@@ -105,12 +112,15 @@
 
                 <article class="work-card reveal" data-tilt data-project="indie">
                     <div class="work-media">
-                        <img src="loja.hugogsilva.dev.png" alt="Interface da IndieGameStore" loading="lazy">
+                        <img src="loja.hugogsilva.dev.jpg" alt="Interface da IndieGameStore" loading="lazy">
                     </div>
                     <div class="work-body">
                         <div class="work-head">
                             <h3>IndieGameStore API</h3>
-                            <span class="work-tag" data-i18n="projects.indie.tag">Marketplace</span>
+                            <div class="work-tags-group">
+                                <span class="work-tag" data-i18n="projects.indie.tag">Marketplace</span>
+                                <span class="work-academic" data-i18n="projects.academic">Acadêmico</span>
+                            </div>
                         </div>
                         <p data-i18n="projects.indie.desc">
                             Marketplace de jogos indie com autenticação JWT, papéis (RBAC), reviews,
@@ -133,7 +143,10 @@
                     <div class="work-body">
                         <div class="work-head">
                             <h3>Chatbot Netflix-Prolog</h3>
-                            <span class="work-tag" data-i18n="projects.chatbot.tag">IA simbólica</span>
+                            <div class="work-tags-group">
+                                <span class="work-tag" data-i18n="projects.chatbot.tag">IA simbólica</span>
+                                <span class="work-academic" data-i18n="projects.academic">Acadêmico</span>
+                            </div>
                         </div>
                         <p data-i18n="projects.chatbot.desc">
                             Chatbot com NLU no backend, inferência em Prolog, sessões em Redis e
@@ -220,7 +233,19 @@
                 <article class="stack-card reveal">
                     <h3><span class="stack-icon">◆</span> <span data-i18n="stack.automation">Automação</span></h3>
                     <ul class="tech-tags">
-                        <li>AutoHotkey</li><li data-i18n="stack.scripts">Scripts utilitários</li><li data-i18n="stack.docgen">Geração de documentos</li><li data-i18n="stack.integrations">Integrações</li>
+                        <li>n8n</li><li>AutoHotkey</li><li data-i18n="stack.scripts">Scripts utilitários</li><li data-i18n="stack.docgen">Geração de documentos</li><li data-i18n="stack.integrations">Integrações</li>
+                    </ul>
+                </article>
+                <article class="stack-card reveal">
+                    <h3><span class="stack-icon">◆</span> <span data-i18n="stack.infra">Infraestrutura &amp; Deploy</span></h3>
+                    <ul class="tech-tags">
+                        <li>Docker</li><li>Portainer</li><li>Cloudflare</li><li>Nginx</li><li>Linux/VPS</li><li>CI/CD</li>
+                    </ul>
+                </article>
+                <article class="stack-card reveal">
+                    <h3><span class="stack-icon">◆</span> <span data-i18n="stack.exploring">Explorando agora</span> <span class="stack-badge" data-i18n="stack.wip">em andamento</span></h3>
+                    <ul class="tech-tags">
+                        <li data-i18n="stack.ai.training">Treinamento/fine-tuning (noções)</li><li data-i18n="stack.ai.llm">APIs de LLM</li><li data-i18n="stack.ai.prompt">Prompt engineering</li><li data-i18n="stack.ai.python">Python p/ dados</li>
                     </ul>
                 </article>
             </div>
@@ -235,19 +260,19 @@
             <ol class="timeline">
                 <li class="reveal">
                     <span class="timeline-dot"></span>
-                    <div class="timeline-period" data-i18n="timeline.t1.period">Cursando</div>
-                    <h3 data-i18n="timeline.t1.title">Análise e Desenvolvimento de Sistemas</h3>
-                    <p data-i18n="timeline.t1.desc">Instituto Federal do Paraná — Paranaguá, PR</p>
+                    <div class="timeline-period" data-i18n="timeline.t1.period">2026 — atual</div>
+                    <h3 data-i18n="timeline.t1.title">Desenvolvedor Full Stack</h3>
+                    <p data-i18n="timeline.t1.desc">Trabalhando no desenvolvimento de aplicações web, APIs e automações.</p>
                 </li>
                 <li class="reveal">
                     <span class="timeline-dot"></span>
-                    <div class="timeline-period" data-i18n="timeline.t2.period">2024 — 2026</div>
-                    <h3 data-i18n="timeline.t2.title">Projetos full stack publicados</h3>
-                    <p data-i18n="timeline.t2.desc">Gerador de Propostas, IndieGameStore API e Chatbot Netflix-Prolog em produção, com deploy próprio.</p>
+                    <div class="timeline-period" data-i18n="timeline.t2.period">Em andamento</div>
+                    <h3 data-i18n="timeline.t2.title">Análise e Desenvolvimento de Sistemas</h3>
+                    <p data-i18n="timeline.t2.desc">Instituto Federal do Paraná — Paranaguá, PR</p>
                 </li>
                 <li class="reveal">
                     <span class="timeline-dot"></span>
-                    <div class="timeline-period" data-i18n="timeline.t3.period">Concluído · Dez 2022</div>
+                    <div class="timeline-period" data-i18n="timeline.t3.period">Concluído · 2022</div>
                     <h3 data-i18n="timeline.t3.title">Técnico em Comércio Exterior</h3>
                     <p data-i18n="timeline.t3.desc">Alberto Gomes Veiga — Paranaguá, PR</p>
                 </li>
