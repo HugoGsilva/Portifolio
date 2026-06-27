@@ -3,181 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hugo G. Silva | Portfólio</title>
+    <meta name="description" content="Portfólio de Hugo Guimarães da Silva, desenvolvedor full stack focado em sistemas web, automação, APIs e projetos com arquitetura real e deploy.">
+    <meta name="theme-color" content="#0a0f0c">
+    <meta property="og:title" content="Hugo Guimarães da Silva | Full Stack Developer">
+    <meta property="og:description" content="Sistemas web, automação de documentos, APIs e projetos completos com frontend, backend e deploy.">
+    <meta property="og:type" content="website">
+    <title>Hugo Guimarães da Silva | Full Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-effects" aria-hidden="true">
-        <div class="grid-glow"></div>
-    </div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
 
-    <header>
-        <nav>
-            <a class="logo" href="#sobre">Hugo G. Silva</a>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Navegação principal">
+            <a class="brand" href="#inicio">
+                <span class="brand-mark">&lt;/&gt;</span>
+                Hugo<span class="brand-accent">.dev</span>
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#trajetoria">Trajetória</a></li>
+                <li><a class="nav-cta" href="#contato">Vamos conversar</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="sobre" class="hero">
-            <div class="hero-content">
-                <p class="greeting">Desenvolvedor full stack</p>
-                <h1 class="name">Hugo G. Silva</h1>
-                <p class="role">Aplicações web, APIs e automação de documentos.</p>
-                <p class="bio">
-                    Crio sistemas que organizam processos reais, reduzem trabalho manual e conectam interface, regra de negócio e deploy.
+        <section id="inicio" class="hero">
+            <div class="hero-inner">
+                <p class="eyebrow reveal"><span class="status-dot"></span>Disponível para projetos · Paranaguá, PR</p>
+                <h1 class="hero-title reveal">
+                    Construo <span class="accent">sistemas web</span><br>de ponta a ponta.
+                </h1>
+                <p class="hero-role reveal">Hugo Guimarães da Silva — Desenvolvedor Full Stack &amp; Analista de Sistemas</p>
+                <p class="hero-lead reveal">
+                    Transformo processos manuais em aplicações claras, testáveis e publicadas:
+                    interface, regra de negócio, persistência, integração e deploy.
                 </p>
-                <div class="hero-actions">
-                    <a href="#projetos" class="cta-button">Ver projetos</a>
-                    <a href="mailto:hugoartess@gmail.com" class="cta-button outline">Entrar em contato</a>
+                <div class="hero-actions reveal">
+                    <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+                    <a class="btn btn-ghost" href="https://docs.google.com/document/d/1jc-6bOqhlyUAKrezHtoS9QtrOKDsIar5j3YH27Zg33w/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Currículo ↗</a>
                 </div>
-                <div class="profile-links" aria-label="Links profissionais">
+                <ul class="hero-stats reveal" aria-label="Resumo">
+                    <li><strong>3</strong><span>Projetos full stack em produção</span></li>
+                    <li><strong>10+</strong><span>Tecnologias no dia a dia</span></li>
+                    <li><strong>ADS</strong><span>Cursando no IFPR</span></li>
+                </ul>
+                <div class="hero-socials reveal" aria-label="Links profissionais">
                     <a href="https://github.com/HugoGsilva" target="_blank" rel="noopener noreferrer">GitHub</a>
                     <a href="https://linkedin.com/in/hugoGsilvaa" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://docs.google.com/document/d/1jc-6bOqhlyUAKrezHtoS9QtrOKDsIar5j3YH27Zg33w/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Currículo</a>
+                    <a href="mailto:hugoartess@gmail.com">E-mail</a>
                 </div>
             </div>
-            <aside class="hero-panel" aria-label="Resumo profissional">
-                <span class="panel-label">Prova rápida</span>
-                <strong>Projetos publicados com frontend, backend e automação.</strong>
-                <ul class="proof-list">
-                    <li>Gerador DOCX/PDF em produção</li>
-                    <li>Marketplace com API e autenticação</li>
-                    <li>Chatbot com FastAPI e Prolog</li>
-                </ul>
-            </aside>
         </section>
 
-        <section id="projetos" class="projects">
-            <div class="section-heading">
-                <p class="section-kicker">Projetos</p>
-                <h2 class="section-title">Provas práticas antes da lista de tecnologias.</h2>
+        <section id="projetos" class="work-section">
+            <div class="section-intro reveal">
+                <p class="eyebrow"><span class="num">01</span> Trabalhos selecionados</p>
+                <h2>Projetos que mostram arquitetura, entrega e uso real.</h2>
             </div>
-            <div class="project-grid">
-                <article class="project-card featured">
-                    <a href="https://docx.hugogsilva.dev/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Gerador de Propostas">
-                        <div class="project-image docx"></div>
-                        <div class="project-info">
-                            <div class="project-meta">
-                                <p class="project-type">Projeto em produção</p>
-                                <span>Automação documental</span>
-                            </div>
-                            <h3>Gerador de Propostas</h3>
-                            <p>Aplicação full stack para preencher modelos DOCX/ODT e gerar propostas comerciais em PDF, reduzindo trabalho manual em documentos repetitivos.</p>
-                            <div class="tags">
-                                <span>React</span>
-                                <span>Node.js</span>
-                                <span>LibreOffice</span>
-                            </div>
-                            <span class="project-action">Abrir projeto</span>
+
+            <div class="work-grid">
+                <article class="work-card reveal">
+                    <div class="work-media">
+                        <img src="docx.hugogsilva.png" alt="Interface do Gerador de Propostas Comerciais" loading="lazy">
+                    </div>
+                    <div class="work-body">
+                        <div class="work-head">
+                            <h3>Gerador de Propostas Comerciais</h3>
+                            <span class="work-tag">Produção</span>
                         </div>
-                    </a>
+                        <p>
+                            Aplicação full stack que preenche modelos DOCX/ODT e gera PDFs comerciais,
+                            reduzindo repetição operacional em propostas.
+                        </p>
+                        <ul class="tech-tags">
+                            <li>React</li><li>Node.js</li><li>Express</li><li>Docxtemplater</li><li>LibreOffice</li>
+                        </ul>
+                        <a class="work-link" href="https://docx.hugogsilva.dev/" target="_blank" rel="noopener noreferrer">Live preview ↗</a>
+                    </div>
                 </article>
 
-                <article class="project-card">
-                    <a href="https://loja.hugogsilva.dev/" target="_blank" rel="noopener noreferrer" aria-label="Abrir IndieGameStore API">
-                        <div class="project-image indie"></div>
-                        <div class="project-info">
-                            <div class="project-meta">
-                                <p class="project-type">Marketplace</p>
-                                <span>API + frontend</span>
-                            </div>
+                <article class="work-card reveal">
+                    <div class="work-media">
+                        <img src="loja.hugogsilva.dev.png" alt="Interface da IndieGameStore" loading="lazy">
+                    </div>
+                    <div class="work-body">
+                        <div class="work-head">
                             <h3>IndieGameStore API</h3>
-                            <p>Marketplace RESTful com controle de papéis, autenticação, suporte multi-moeda e estrutura para filas.</p>
-                            <div class="tags">
-                                <span>Ruby on Rails</span>
-                                <span>React</span>
-                                <span>PostgreSQL</span>
-                            </div>
-                            <span class="project-action">Abrir projeto</span>
+                            <span class="work-tag">Marketplace</span>
                         </div>
-                    </a>
+                        <p>
+                            Marketplace de jogos indie com autenticação JWT, papéis (RBAC), reviews,
+                            compras, multi-moeda e frontend React.
+                        </p>
+                        <ul class="tech-tags">
+                            <li>Ruby on Rails 8</li><li>PostgreSQL</li><li>JWT / RBAC</li><li>Swagger</li><li>React</li>
+                        </ul>
+                        <a class="work-link" href="https://loja.hugogsilva.dev/" target="_blank" rel="noopener noreferrer">Live preview ↗</a>
+                    </div>
                 </article>
 
-                <article class="project-card">
-                    <a href="https://chat.hugogsilva.dev/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Chatbot Netflix-Prolog">
-                        <div class="project-image chatbot"></div>
-                        <div class="project-info">
-                            <div class="project-meta">
-                                <p class="project-type">IA simbólica</p>
-                                <span>NLU + inferência</span>
-                            </div>
+                <article class="work-card reveal">
+                    <div class="work-media">
+                        <img src="chatbot.png" alt="Interface do Chatbot Netflix-Prolog" loading="lazy">
+                    </div>
+                    <div class="work-body">
+                        <div class="work-head">
                             <h3>Chatbot Netflix-Prolog</h3>
-                            <p>Thin client com NLU via FastAPI e lógica de inferência construída com SWI-Prolog.</p>
-                            <div class="tags">
-                                <span>Angular 17</span>
-                                <span>FastAPI</span>
-                                <span>SWI-Prolog</span>
-                            </div>
-                            <span class="project-action">Abrir projeto</span>
+                            <span class="work-tag">IA simbólica</span>
                         </div>
-                    </a>
-                </article>
-            </div>
-        </section>
-
-        <section id="habilidades" class="skills">
-            <div class="section-heading">
-                <p class="section-kicker">Habilidades</p>
-                <h2 class="section-title">Stack usada para entregar sistemas completos.</h2>
-            </div>
-            <div class="skill-grid">
-                <article class="skill-card">
-                    <h3>Backend e APIs</h3>
-                    <div class="tags">
-                        <span>Node.js</span>
-                        <span>Express</span>
-                        <span>Ruby on Rails</span>
-                        <span>FastAPI</span>
-                        <span>SQL</span>
-                    </div>
-                </article>
-                <article class="skill-card">
-                    <h3>Frontend</h3>
-                    <div class="tags">
-                        <span>React</span>
-                        <span>Angular</span>
-                        <span>JavaScript</span>
-                        <span>HTML/CSS</span>
-                        <span>Tailwind CSS</span>
-                    </div>
-                </article>
-                <article class="skill-card">
-                    <h3>Operação e entrega</h3>
-                    <div class="tags">
-                        <span>Git</span>
-                        <span>Docker</span>
-                        <span>PostgreSQL</span>
-                        <span>WordPress</span>
-                        <span>Scrum</span>
+                        <p>
+                            Chatbot com NLU no backend, inferência em Prolog, sessões em Redis e
+                            frontend Angular para consultas sobre filmes.
+                        </p>
+                        <ul class="tech-tags">
+                            <li>FastAPI</li><li>SWI-Prolog</li><li>Redis</li><li>Angular 17</li><li>Docker</li>
+                        </ul>
+                        <a class="work-link" href="https://chat.hugogsilva.dev/" target="_blank" rel="noopener noreferrer">Live preview ↗</a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="contato" class="contact">
-            <div class="contact-inner">
-                <p class="section-kicker">Contato</p>
-                <h2 class="section-title">Vamos conversar sobre sistemas, automação ou oportunidades?</h2>
-                <p>Me envie um e-mail ou veja meu currículo para conhecer melhor minha formação, stack e projetos.</p>
-                <div class="contact-actions">
-                    <a href="mailto:hugoartess@gmail.com" class="cta-button">Enviar e-mail</a>
-                    <a href="https://docs.google.com/document/d/1jc-6bOqhlyUAKrezHtoS9QtrOKDsIar5j3YH27Zg33w/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="cta-button outline">Ver currículo</a>
+        <section id="sobre" class="about-section">
+            <div class="section-intro reveal">
+                <p class="eyebrow"><span class="num">02</span> Sobre</p>
+                <h2>Gosto de construir o caminho inteiro entre ideia, sistema e entrega.</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-copy reveal">
+                    <p>
+                        Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> no Instituto
+                        Federal do Paraná, com interesse prático em desenvolvimento web, automação e
+                        arquitetura de aplicações.
+                    </p>
+                    <p>
+                        Minha base mistura programação, análise de sistemas, gerenciamento de projetos e
+                        comunicação. Nos projetos, transformo requisitos em fluxos utilizáveis, APIs
+                        previsíveis e interfaces objetivas — sempre até o deploy.
+                    </p>
+                </div>
+
+                <dl class="facts-list reveal">
+                    <div>
+                        <dt>Formação atual</dt>
+                        <dd>Análise e Desenvolvimento de Sistemas — IFPR</dd>
+                    </div>
+                    <div>
+                        <dt>Formação técnica</dt>
+                        <dd>Técnico em Comércio Exterior — Alberto Gomes Veiga</dd>
+                    </div>
+                    <div>
+                        <dt>Localização</dt>
+                        <dd>Paranaguá, Paraná — Brasil</dd>
+                    </div>
+                    <div>
+                        <dt>Interesses</dt>
+                        <dd>Automação · Backend · Web apps · Roblox backend · Criação de jogos</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section id="stack" class="stack-section">
+            <div class="section-intro reveal">
+                <p class="eyebrow"><span class="num">03</span> Stack</p>
+                <h2>Ferramentas que uso para tirar projetos do papel.</h2>
+            </div>
+
+            <div class="stack-grid">
+                <article class="stack-card reveal">
+                    <h3><span class="stack-icon">◆</span> Frontend</h3>
+                    <ul class="tech-tags">
+                        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Angular</li><li>Vite</li><li>Tailwind CSS</li>
+                    </ul>
+                </article>
+                <article class="stack-card reveal">
+                    <h3><span class="stack-icon">◆</span> Backend</h3>
+                    <ul class="tech-tags">
+                        <li>Node.js</li><li>Express</li><li>Python</li><li>FastAPI</li><li>Ruby on Rails</li><li>Java</li>
+                    </ul>
+                </article>
+                <article class="stack-card reveal">
+                    <h3><span class="stack-icon">◆</span> Dados &amp; Entrega</h3>
+                    <ul class="tech-tags">
+                        <li>SQL</li><li>PostgreSQL</li><li>Redis</li><li>Git</li><li>Docker</li><li>REST</li><li>Swagger</li>
+                    </ul>
+                </article>
+                <article class="stack-card reveal">
+                    <h3><span class="stack-icon">◆</span> Automação</h3>
+                    <ul class="tech-tags">
+                        <li>AutoHotkey</li><li>Scripts utilitários</li><li>Geração de documentos</li><li>Integrações</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="trajetoria" class="timeline-section">
+            <div class="section-intro reveal">
+                <p class="eyebrow"><span class="num">04</span> Trajetória</p>
+                <h2>Formação e marcos.</h2>
+            </div>
+
+            <ol class="timeline">
+                <li class="reveal">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-period">Cursando</div>
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    <p>Instituto Federal do Paraná — Paranaguá, PR</p>
+                </li>
+                <li class="reveal">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-period">2024 — 2026</div>
+                    <h3>Projetos full stack publicados</h3>
+                    <p>Gerador de Propostas, IndieGameStore API e Chatbot Netflix-Prolog em produção, com deploy próprio.</p>
+                </li>
+                <li class="reveal">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-period">Concluído · Dez 2022</div>
+                    <h3>Técnico em Comércio Exterior</h3>
+                    <p>Alberto Gomes Veiga — Paranaguá, PR</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <div class="contact-inner reveal">
+                <p class="eyebrow"><span class="num">05</span> Contato</p>
+                <h2>Quer conversar sobre sistemas, automação ou oportunidades?</h2>
+                <p class="contact-lead">Respondo rápido — escolha o canal que preferir.</p>
+                <div class="contact-links">
+                    <a class="btn btn-primary" href="mailto:hugoartess@gmail.com">hugoartess@gmail.com</a>
+                    <a class="btn btn-ghost" href="https://github.com/HugoGsilva" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a class="btn btn-ghost" href="https://linkedin.com/in/hugoGsilvaa" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Hugo Guimarães da Silva.</p>
+    <footer class="site-footer">
+        <p>© 2026 Hugo Guimarães da Silva</p>
+        <p class="footer-note">Feito com HTML, CSS e JavaScript.</p>
     </footer>
 
     <script src="script.js"></script>

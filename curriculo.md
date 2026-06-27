@@ -7,6 +7,7 @@ hugoartess@gmail.com
 (41)985025645
 linkedin.com/in/hugoGsilvaa
 github.com/HugoGsilva
+ Paranaguá
         
 
 
