@@ -117,7 +117,6 @@ const I18N = {
 // ---- Project case studies --------------------------------------------------
 const PROJECTS = {
     docx: {
-        url: 'https://docx.hugogsilva.dev/',
         stack: ['React 18', 'Vite', 'Tailwind CSS', 'Node.js', 'Express', 'Docxtemplater', 'PizZip', 'LibreOffice', 'Docker'],
         pt: {
             title: 'Gerador de Propostas Comerciais', tag: 'Produção · Automação documental',
@@ -233,7 +232,7 @@ function openModal(key) {
             <h4>${t('modal.stack')}</h4>
             <ul class="modal-tech">${data.stack.map((s) => `<li>${s}</li>`).join('')}</ul>
         </div>
-        <a class="btn btn-primary modal-cta" href="${data.url}" target="_blank" rel="noopener noreferrer">${t('modal.visit')}</a>`;
+        ${data.url ? `<a class="btn btn-primary modal-cta" href="${data.url}" target="_blank" rel="noopener noreferrer">${t('modal.visit')}</a>` : ''}`;
     modal.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('modal-open');

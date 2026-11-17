@@ -50,7 +50,9 @@
 \newcommand{\project}[6]{%
   \textbf{#1} \hspace{4pt}{\footnotesize\color{accent}\faTag\ #2}\\
   {\color{muted}\footnotesize #3}\par\vspace{1pt}
-  #4\ \href{#6}{\footnotesize\color{accent}\faExternalLinkAlt\ #5}\par\vspace{2pt}
+  #4%
+  \if\relax\detokenize{#6}\relax\else\ \href{#6}{\footnotesize\color{accent}\faExternalLinkAlt\ #5}\fi
+  \par\vspace{2pt}
 }
 
 %==============================================================
@@ -103,7 +105,7 @@ Portainer, Cloudflare) e, atualmente, exploro IA aplicada e automações com n8n
 \project{Gerador de Propostas Comerciais}{Produção}
   {React · Node.js · Express · Docxtemplater · LibreOffice · Docker}
   {Aplicação full stack que preenche modelos DOCX/ODT e gera PDFs comerciais, automatizando um processo manual e repetitivo. Em uso real, com deploy próprio.}
-  {docx.hugogsilva.dev}{https://docx.hugogsilva.dev}
+  {}{}
 
 \project{IndieGameStore API}{Acadêmico}
   {Ruby on Rails 8 · PostgreSQL · JWT/RBAC · Swagger · React · Vite}

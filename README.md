@@ -22,7 +22,7 @@ APIs, automações e aplicações web — da interface ao deploy.
 
 | Projeto | Status | Stack |
 |---|---|---|
-| [Gerador de Propostas Comerciais](https://docx.hugogsilva.dev) | Produção | React, Node.js, Express, Docxtemplater, Docker |
+| Gerador de Propostas Comerciais | Produção | React, Node.js, Express, Docxtemplater, Docker |
 | [IndieGameStore API](https://loja.hugogsilva.dev) | Acadêmico | Ruby on Rails 8, PostgreSQL, JWT/RBAC, React |
 | [Chatbot Netflix-Prolog](https://chat.hugogsilva.dev) | Acadêmico | FastAPI, SWI-Prolog, Redis, Angular 17, Docker |
 
